@@ -22,3 +22,5 @@ function numberOfPackets(fileSize){
 }
 
 //main test methods
+console.log(numberOfPackets(1000))
+console.log(buildTorrentPacketArray(20))
