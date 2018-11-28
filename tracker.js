@@ -30,7 +30,7 @@ function Tracker(){
   function removeSeed(name){
     let index= 0;
     for(let i = 0; i < seeds.length; i++){
-      if(seeds[i] === s){
+      if(seeds[i] === name){
         
         seeds[i] =null;
 
@@ -42,23 +42,35 @@ function Tracker(){
 
 
 
-  function reportHealth(list){
+  function reportHealth(){
     let sum=0
-    for(let i=0; i < list.length; i++){
-      if(list [i]!=0){
-        sum=sum+list[i];
+    let count =0;
+
+    for(let i=0; i < percent.length; i++){
+      if(percent[i] != 0){
+        sum =sum + percent[i];
+        count++;
       }
     }
-    return sum/list.length
+    return sum/count;
   }
 
 
 
 
-  function update(){
-    Math.random(0,1);
-    for(let i=0; i<list.legth; i++)
+ function update(){
+   for(let i = 0; i < seeds.length; i++){
+     let r = Math.random()
+     if(r > seeds[i]){
+       seeds[i] = r;
+      }
+     else(r < 0.03){
+       seeds[i] = null;
+       percent[i] = 0 ;
+      }
+    }
   }
+   
 }
 
 

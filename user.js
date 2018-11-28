@@ -5,8 +5,24 @@ function User(tracker, torrent){
   let myTorrent = torrent;
 
   //Type all of your code in here.
+  function torrentFile{}
+  
 
 
 
+
+  function torrentTrackerFile{}
+
+
+
+
+
+  function state{}
+
+
+
+
+
+  function downloadSpeed{}
 
 }
