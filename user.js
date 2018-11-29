@@ -3,26 +3,41 @@ function User(tracker, torrent){
 
   let myTracker = tracker;
   let myTorrent = torrent;
+  let state = "leech";
+  let downloadSpeed = 0;
+  let uploadSpeed = 0;
 
   //Type all of your code in here.
-  function torrentFile{}
-  
+  function startDownload(){
 
 
+  }
 
 
-  function torrentTrackerFile{}
+  function updateTracker(){
 
 
+  }
 
 
+  function checkProgress(){
 
-  function state{}
-
-
-
+  }
 
 
-  function downloadSpeed{}
+  function leech(){
+    state = "leech";
+    downloadSpeed = Math.random();
+    uploadSpeed = 0;
+
+  }
+
+  function seed(){
+      state = "seed";
+      downloadSpeed ;
+      uploadSpeed;
+
+  }
+
 
 }
