@@ -64,7 +64,7 @@ function Tracker(){
      if(r > seeds[i]){
        seeds[i] = r;
       }
-     else(r < 0.03){
+     else(r < 0.03);{
        seeds[i] = null;
        percent[i] = 0 ;
       }
